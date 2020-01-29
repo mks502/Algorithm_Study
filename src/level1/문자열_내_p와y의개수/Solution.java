@@ -1,11 +1,11 @@
-package level1.¹®ÀÚ¿­_³»_p¿ÍyÀÇ°³¼ö;
+package level1.ë¬¸ìì—´_ë‚´_pì™€yì˜ê°œìˆ˜;
 
 class Solution {
 	boolean solution(String s) {
 		s = s.toUpperCase();
 		int num = 0;
 		for (int i = 0; i < s.length(); i++) {
-			char currentChar = s.charAt(i); // ÇöÀç ¹®ÀÚ
+			char currentChar = s.charAt(i); // í˜„ì¬ ë¬¸ì
 			if (currentChar == 'P')
 				num++;
 			else if (currentChar == 'Y')

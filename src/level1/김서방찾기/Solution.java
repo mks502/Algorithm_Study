@@ -1,11 +1,11 @@
-package level1.±è¼­¹æÃ£±â;
+package level1.ê¹€ì„œë°©ì°¾ê¸°;
 
 class Solution {
 	public String solution(String[] seoul) {
 		String answer = "";
 		for (int i = 0; i < seoul.length; i++) {
 			if (seoul[i].contains("Kim"))
-				return answer = String.format("±è¼­¹æÀº %d¿¡ ÀÖ´Ù", i);
+				return answer = String.format("ê¹€ì„œë°©ì€ %dì— ìžˆë‹¤", i);
 		}
 		return answer;
 	}

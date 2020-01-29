@@ -1,10 +1,10 @@
-package level1.ÀÚ¸´¼ö_´õÇÏ±â;
+package level1.ìžë¦¿ìˆ˜_ë”í•˜ê¸°;
 import java.util.*;
 
 public class Solution {
     public int solution(int n) {
         int answer = 0;
-        int temp; //°¢ ÀÚ¸´¼ö¸¦ ÀÓ½Ã ÀúÀåÇÒ º¯¼ö
+        int temp; //ê° ìžë¦¿ìˆ˜ë¥¼ ìž„ì‹œ ì €ìž¥í•  ë³€ìˆ˜
         while(n>0){
             temp=n%10;
             n=n/10;

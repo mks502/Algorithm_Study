@@ -1,4 +1,4 @@
-package level1.ÇÏ»þµå¼ö;
+package level1.í•˜ìƒ¤ë“œìˆ˜;
 
 class Solution {
 	public boolean solution(int x) {

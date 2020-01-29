@@ -1,9 +1,9 @@
-package level1.¹®ÀÚ¿­À»_Á¤¼ö·Î_¹Ù²Ù±â;
+package level1.ë¬¸ìì—´ì„_ì •ìˆ˜ë¡œ_ë°”ê¾¸ê¸°;
 
 class Solution {
 	public int solution(String s) {
 		int answer = 0;
-		int sign = 1; // ºÎÈ£ 1ÀÌ¸é + -1 ÀÌ¸é -
+		int sign = 1; // ë¶€í˜¸ 1ì´ë©´ + -1 ì´ë©´ -
 		int index = 0;
 		char[] letter = s.toCharArray();
 		int maxDigit = (int) Math.pow(10, letter.length - 1);

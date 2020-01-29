@@ -1,15 +1,15 @@
-package level1.µÎ_Á¤¼ö_»çÀÌÀÇ_ÇÕ;
+package level1.ë‘_ì •ìˆ˜ì˜_í•©;
 
 class Solution {
-	  public long solution(int a, int b) {
-	      int temp;
-	      long answer = 0;
-	      if(a>b) {
-	          temp=b;
-	          b=a;
-	          a=temp;
-	      }
-	      for(int i=a; i<=b; i++) answer += i;
-	      return answer;
-	  }	 
+	public long solution(int a, int b) {
+		int temp;
+		long answer = 0;
+		if(a>b) {
+			temp=b;
+			b=a;
+			a=temp;
+		}
+		for(int i=a; i<=b; i++) answer += i;
+		return answer;
+	}
 }

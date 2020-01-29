@@ -1,8 +1,8 @@
-package level1.¼ö¹Ú¼ö¹Ú¼ö;
+package level1.ìˆ˜ë°•ìˆ˜ë°•ìˆ˜;
 
 class Solution {
 	public String solution(int n) {
-		String waterMelon = "¼ö¹Ú";
+		String waterMelon = "ìˆ˜ë°•";
 		StringBuilder answer = new StringBuilder("");
 		for (int i = 0; i < n; i++) {
 			answer.append(waterMelon.charAt(i % 2));

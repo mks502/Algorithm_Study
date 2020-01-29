@@ -1,12 +1,12 @@
-package level1.¿ÏÁÖÇÏÁö¸øÇÑ¼±¼ö;
+package level1.ì™„ì£¼í•˜ì§€ëª»í•œì„ ìˆ˜;
 import java.util.*;
 class Solution {
     public String solution(String[] participant, String[] completion) {
         String answer = "";
         Map<String,Integer> hashMap = new HashMap<String,Integer>();
         for(String one : participant){
-            Integer num = (Integer)hashMap.get(one);   //ÀÌ¸§¿¡ ´ëÇÑ ÀÎ¿ø
-            if(num == null){        //num ÀÌ null ÀÌ¸é ¾ÆÁ÷ ÇØ´ç ÀÌ¸§¿¡ ´ëÇÑ ÀÎ¿øÀÌ ¾Æ¹«µµ ¾øÀ½
+            Integer num = (Integer)hashMap.get(one);   //ì´ë¦„ì— ëŒ€í•œ ì¸ì›
+            if(num == null){        //num ì´ null ì´ë©´ ì•„ì§ í•´ë‹¹ ì´ë¦„ì— ëŒ€í•œ ì¸ì›ì´ ì•„ë¬´ë„ ì—†ìŒ
                 hashMap.put(one,1);
             }
             else{
@@ -15,7 +15,7 @@ class Solution {
             }
         }
         for(String one : completion){
-            Integer num = (Integer)hashMap.get(one);   //ÀÌ¸§¿¡ ´ëÇÑ ÀÎ¿ø
+            Integer num = (Integer)hashMap.get(one);   //ì´ë¦„ì— ëŒ€í•œ ì¸ì›
             num--;
             hashMap.put(one,num);
         }
@@ -30,12 +30,12 @@ class Solution {
     
     
     
-    ///////Iterator »ç¿ë
+    ///////Iterator ì‚¬ìš©
     public String solution2(String[] participant, String[] completion) {
         String answer = "";
         Map<String,Integer> hashMap = new HashMap<String,Integer>();
         for(String one : participant){
-            Integer num = (Integer)hashMap.get(one);   //ÀÌ¸§¿¡ ´ëÇÑ ÀÎ¿ø
+            Integer num = (Integer)hashMap.get(one);   //ì´ë¦„ì— ëŒ€í•œ ì¸ì›
             if(num == null){
                 hashMap.put(one,1);
             }
@@ -45,15 +45,15 @@ class Solution {
             }
         }
         for(String one : completion){
-            Integer num = (Integer)hashMap.get(one);   //ÀÌ¸§¿¡ ´ëÇÑ ÀÎ¿ø
+            Integer num = (Integer)hashMap.get(one);   //ì´ë¦„ì— ëŒ€í•œ ì¸ì›
             num--;
             hashMap.put(one,num);
         }
-        Set keySet = hashMap.keySet();      //keySetÀ» »Ì¾Æ¼­
-        Iterator iter = keySet.iterator();  // Iterator ¸¦ »ç¿ë
+        Set keySet = hashMap.keySet();      //keySetì„ ë½‘ì•„ì„œ
+        Iterator iter = keySet.iterator();  // Iterator ë¥¼ ì‚¬ìš©
         while(iter.hasNext()){
             String nextKey= (String)iter.next();
-            if( (Integer)hashMap.get(nextKey) > 0 ){ //hashMap¿¡ ÀÎ¿øÀÌ 0ÀÌ»óÀÌ¸é Åë°úÇÏÁö ¸øÇÑ ÀÎ¿ø
+            if( (Integer)hashMap.get(nextKey) > 0 ){ //hashMapì— ì¸ì›ì´ 0ì´ìƒì´ë©´ í†µê³¼í•˜ì§€ ëª»í•œ ì¸ì›
                 answer = nextKey;
                 return answer;
             }

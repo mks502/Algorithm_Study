@@ -1,4 +1,4 @@
-package level1.Á÷»ç°¢Çü_º°Âï±â;
+package level1.ì§ì‚¬ê°í˜•_ë³„ì°ê¸°;
 
 import java.util.Scanner;
 

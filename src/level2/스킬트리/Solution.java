@@ -1,4 +1,4 @@
-package level2.½ºÅ³Æ®¸®;
+package level2.ìŠ¤í‚¬íŠ¸ë¦¬;
 
 import java.util.*;
 
@@ -16,14 +16,14 @@ class Solution {
 	}
 
 	private boolean isAvailable(ArrayList skillList, String skillTree) {
-		int order = 0; // ÇöÀç ¹è¿î ¼±Çà ½ºÅ³ ¼ø¼­
+		int order = 0; // í˜„ìž¬ ë°°ìš´ ì„ í–‰ ìŠ¤í‚¬ ìˆœì„œ
 		for (int i = 0; i < skillTree.length(); i++) {
-			char selectedSkill = skillTree.charAt(i); // Âï¾î¾ß ÇÒ ½ºÅ³
-			if (skillList.contains(selectedSkill)) { // ¼±Çà½ºÅ³ ¸ñ·Ï¿¡ ÀÖÀ¸¸é ¼±Çà½ºÅ³ È®ÀÎ ÇÊ¿ä
+			char selectedSkill = skillTree.charAt(i); // ì°ì–´ì•¼ í•  ìŠ¤í‚¬
+			if (skillList.contains(selectedSkill)) { // ì„ í–‰ìŠ¤í‚¬ ëª©ë¡ì— ìžˆìœ¼ë©´ ì„ í–‰ìŠ¤í‚¬ í™•ì¸ í•„ìš”
 				if (selectedSkill == (char) skillList.get(order))
-					order++; // ¹è¿ï ¼ö ÀÖÀ½
+					order++; // ë°°ìš¸ ìˆ˜ ìžˆìŒ
 				else
-					return false; // ¹è¿ï ¼ö ¾øÀ¸¸é ´õÀÌ»ó È®ÀÎ ÇÊ¿äx false ¹ÝÈ¯
+					return false; // ë°°ìš¸ ìˆ˜ ì—†ìœ¼ë©´ ë”ì´ìƒ í™•ì¸ í•„ìš”x false ë°˜í™˜
 			}
 		}
 		return true;

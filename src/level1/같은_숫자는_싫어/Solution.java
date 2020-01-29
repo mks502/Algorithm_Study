@@ -1,12 +1,12 @@
-package level1.°°Àº_¼ıÀÚ´Â_½È¾î;
+package level1.ê°™ì€_ìˆ«ìëŠ”_ì‹«ì–´;
 
 import java.util.*;
 
 public class Solution {
 	public int[] solution(int []arr) {
         ArrayList<Integer> arrayList = new ArrayList<Integer>();
-        int temp=arr[0];      //¹Ù·Î Àü¿¡ ¼ıÀÚ¿Í Áßº¹ ºñ±³ÇÏ±â À§ÇÑ ÀÓ½Ã º¯¼ö
-        arrayList.add(temp);  //Ã¹ °ªÀº ´ç¿¬È÷ Áßº¹µÇÁö ¾ÊÀº ¼öÀÌ¹Ç·Î ³Ö¾îÁÖ°í ½ÃÀÛ
+        int temp=arr[0];      //ë°”ë¡œ ì „ì— ìˆ«ìì™€ ì¤‘ë³µ ë¹„êµí•˜ê¸° ìœ„í•œ ì„ì‹œ ë³€ìˆ˜
+        arrayList.add(temp);  //ì²« ê°’ì€ ë‹¹ì—°íˆ ì¤‘ë³µë˜ì§€ ì•Šì€ ìˆ˜ì´ë¯€ë¡œ ë„£ì–´ì£¼ê³  ì‹œì‘
         for(int i=1; i < arr.length; i++){
             if( temp != arr[i] )
                 arrayList.add(arr[i]);

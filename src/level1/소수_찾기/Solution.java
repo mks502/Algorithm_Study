@@ -1,15 +1,15 @@
-package level1.¼Ò¼ö_Ã£±â;
+package level1.ì†Œìˆ˜_ì°¾ê¸°;
 
 class Solution {
   public int solution(int n) {
-      //Á¦ÇÑ Á¶°ÇÀÌ nÀº 2ÀÌ»óÀÌ°í 2´Â ¼Ò¼öÀÌ¹Ç·Î 1°³ºÎÅÍ ½ÃÀÛÇÑ´Ù.
+      //ì œí•œ ì¡°ê±´ì´ nì€ 2ì´ìƒì´ê³  2ëŠ” ì†Œìˆ˜ì´ë¯€ë¡œ 1ê°œë¶€í„° ì‹œìž‘í•œë‹¤.
       int answer = 1;
-      //2´Â ÀÌ¹Ì ¼Ò¼ö·Î °³¼ö¸¦ Æ÷ÇÔÇßÀ¸´Ï 3ºÎÅÍ ¼Ò¼ö¸¦ Ã£´Â´Ù
+      //2ëŠ” ì´ë¯¸ ì†Œìˆ˜ë¡œ ê°œìˆ˜ë¥¼ í¬í•¨í–ˆìœ¼ë‹ˆ 3ë¶€í„° ì†Œìˆ˜ë¥¼ ì°¾ëŠ”ë‹¤
       for(int i=3; i<=n; i++){
           boolean flag=false;
           for(int j=2; j<=Math.sqrt(i); j++){
               if(i%j==0) {
-                  //ÀÌ¹Ì ³ª´²Áö´Â ¼ö°¡ ÀÖ´Ù¸é ´õ ÀÌ»ó ¼Ò¼ö°¡ ¾Æ´Ï¹Ç·Î break¹®À¸·Î Å»Ãâ
+                  //ì´ë¯¸ ë‚˜ëˆ ì§€ëŠ” ìˆ˜ê°€ ìžˆë‹¤ë©´ ë” ì´ìƒ ì†Œìˆ˜ê°€ ì•„ë‹ˆë¯€ë¡œ breakë¬¸ìœ¼ë¡œ íƒˆì¶œ
                   flag = true;
                   break;
               }

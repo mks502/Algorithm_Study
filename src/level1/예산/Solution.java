@@ -1,17 +1,17 @@
-package level1.¿¹»ê;
+package level1.ì˜ˆì‚°;
 
 import java.util.*;
 
 class Solution {
 	public int solution(int[] d, int budget) {
 		int answer = 0;
-		Arrays.sort(d); // ¹°°Ç¸¶´Ù °¡Ä¡°¡ Á¤ÇØÁø °ÍÀÌ ¾Æ´Ï°í ´ÜÁö ÃÖ´ëÇÑ ¸¹Àº ¹°Ç°À» »ç´Â°Ô ¸ñÀû
-		for (int price : d) { // ¿À¸§Â÷¼øÀ¸·Î Á¤·Ä
+		Arrays.sort(d); // ë¬¼ê±´ë§ˆë‹¤ ê°€ì¹˜ê°€ ì •í•´ì§„ ê²ƒì´ ì•„ë‹ˆê³  ë‹¨ì§€ ìµœëŒ€í•œ ë§ì€ ë¬¼í’ˆì„ ì‚¬ëŠ”ê²Œ ëª©ì 
+		for (int price : d) { // ì˜¤ë¦„ì°¨ìˆœìœ¼ë¡œ ì •ë ¬
 			if (budget >= price) {
 				budget -= price;
 				answer++;
 			} else
-				return answer; // ³²Àº ¿¹»êº¸´Ù ÇØ´ç °¡°İÀÌ ºñ½Î¸é ´õ ÀÌ»ó ±¸¸Å ºÒ°¡
+				return answer; // ë‚¨ì€ ì˜ˆì‚°ë³´ë‹¤ í•´ë‹¹ ê°€ê²©ì´ ë¹„ì‹¸ë©´ ë” ì´ìƒ êµ¬ë§¤ ë¶ˆê°€
 		}
 		return answer;
 	}

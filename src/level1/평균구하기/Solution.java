@@ -1,4 +1,4 @@
-package level1.Æò±Õ±¸ÇÏ±â;
+package level1.í‰ê· êµ¬í•˜ê¸°;
 
 class Solution {
 	public double solution(int[] arr) {

@@ -1,8 +1,8 @@
-package level2.ÇÁ¸°ÅÍ;
+package level2.í”„ë¦°í„°;
 
 import java.util.*;
 class Solution { 
-    public class Document { //¾î¶² ¹®¼­ÀÎÁö(index)¿Í Áß¿äµµ µÑ´Ù ÇÊ¿äÇÏ¿© class·Î ¼±¾ğ
+    public class Document { //ì–´ë–¤ ë¬¸ì„œì¸ì§€(index)ì™€ ì¤‘ìš”ë„ ë‘˜ë‹¤ í•„ìš”í•˜ì—¬ classë¡œ ì„ ì–¸
         private Integer index=0;
         private Integer priority;
         public Document(Integer index,Integer priority) {
@@ -17,10 +17,10 @@ class Solution {
         }
     }   
     public int solution(int[] priorities, int location) {
-        int answer = 0;  //¸î¹øÂ°·Î ³ª¿À´ÂÁö
-        Queue<Document> printerQueue = new LinkedList<Document>();  // ¾î¶² ¹®¼­(index)¿Í Áß¿äµµ¸¦ ´ãÀº Å¥
-        //Å« ¼ö°¡ ¿ì¼±¼øÀ§ÀÎ ¿ì¼±¼øÀ§Å¥·Î ¸¸µë
-        //Áß¿äµµ¸¸ ´ãÀº ¿ì¼±¼øÀ§ Å¥
+        int answer = 0;  //ëª‡ë²ˆì§¸ë¡œ ë‚˜ì˜¤ëŠ”ì§€
+        Queue<Document> printerQueue = new LinkedList<Document>();  // ì–´ë–¤ ë¬¸ì„œ(index)ì™€ ì¤‘ìš”ë„ë¥¼ ë‹´ì€ í
+        //í° ìˆ˜ê°€ ìš°ì„ ìˆœìœ„ì¸ ìš°ì„ ìˆœìœ„íë¡œ ë§Œë“¬
+        //ì¤‘ìš”ë„ë§Œ ë‹´ì€ ìš°ì„ ìˆœìœ„ í
         PriorityQueue<Integer> priorityQueue = new PriorityQueue<Integer>(Collections.reverseOrder());
         int index=0;
         for (int priority : priorities){
@@ -28,15 +28,15 @@ class Solution {
             priorityQueue.offer(priority);
             index++;
         }
-        while (! printerQueue.isEmpty()){ //ºñ¾îÀÖÁö ¾ÊÀ» µ¿¾È
+        while (! printerQueue.isEmpty()){ //ë¹„ì–´ìˆì§€ ì•Šì„ ë™ì•ˆ
             Document document = printerQueue.peek();
-            if(document.getPriority() >= priorityQueue.peek() ){ //ÇöÀç µé¾î¿Â ÀÎ¼â¿äÃ»º¸´Ù ³ôÀº ¿ì¼±¼øÀ§°¡ ¾ø´Ù¸é Ãâ·Â
+            if(document.getPriority() >= priorityQueue.peek() ){ //í˜„ì¬ ë“¤ì–´ì˜¨ ì¸ì‡„ìš”ì²­ë³´ë‹¤ ë†’ì€ ìš°ì„ ìˆœìœ„ê°€ ì—†ë‹¤ë©´ ì¶œë ¥
                 answer++;
                 if(document.getIndex() == location) return answer;
                 printerQueue.poll();
                 priorityQueue.poll();
             }
-            else{ //ÇöÀç µé¾î¿Â ÀÎ¼â¿äÃ»º¸´Ù ¿ì¼±¼øÀ§°¡ ³ôÀº °ÍÀÌ ÀÖÀ¸¸é ¸ÇµÚ ¼ø¼­·Î ´Ù½Ã ³Ñ±è
+            else{ //í˜„ì¬ ë“¤ì–´ì˜¨ ì¸ì‡„ìš”ì²­ë³´ë‹¤ ìš°ì„ ìˆœìœ„ê°€ ë†’ì€ ê²ƒì´ ìˆìœ¼ë©´ ë§¨ë’¤ ìˆœì„œë¡œ ë‹¤ì‹œ ë„˜ê¹€
                 Document docu = printerQueue.poll();
                 printerQueue.offer(document); 
             }

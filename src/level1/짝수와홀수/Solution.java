@@ -1,4 +1,4 @@
-package level1.Â¦¼ö¿ÍÈ¦¼ö;
+package level1.ì§ìˆ˜ì™€í™€ìˆ˜;
 
 class Solution {
 	public String solution(int num) {
